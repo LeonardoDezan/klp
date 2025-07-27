@@ -1,0 +1,75 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#5514
+    [34mall[39m: [
+      [34;4mApp\Models\Representante[39;24m {#5518
+        [34mnome[39m: "[32mBarry Paucek[39m",
+        [34mobservacao[39m: [36mnull[39m,
+        [34mupdated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mcreated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mid[39m: [35m61[39m,
+      },
+      [34;4mApp\Models\Representante[39;24m {#5516
+        [34mnome[39m: "[32mKing Hodkiewicz[39m",
+        [34mobservacao[39m: "[32mAdventures, till she was.[39m",
+        [34mupdated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mcreated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mid[39m: [35m62[39m,
+      },
+      [34;4mApp\Models\Representante[39;24m {#5519
+        [34mnome[39m: "[32mElfrieda Leffler[39m",
+        [34mobservacao[39m: "[32mTortoise, if he had come.[39m",
+        [34mupdated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mcreated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mid[39m: [35m63[39m,
+      },
+      [34;4mApp\Models\Representante[39;24m {#5520
+        [34mnome[39m: "[32mMiss Adela Monahan III[39m",
+        [34mobservacao[39m: "[32mDinah my dear! Let this be a.[39m",
+        [34mupdated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mcreated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mid[39m: [35m64[39m,
+      },
+      [34;4mApp\Models\Representante[39;24m {#5521
+        [34mnome[39m: "[32mPink Blick[39m",
+        [34mobservacao[39m: "[32mCat, and vanished. Alice was.[39m",
+        [34mupdated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mcreated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mid[39m: [35m65[39m,
+      },
+      [34;4mApp\Models\Representante[39;24m {#5522
+        [34mnome[39m: "[32mAlexie Champlin[39m",
+        [34mobservacao[39m: "[32mAlice quite jumped; but she.[39m",
+        [34mupdated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mcreated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mid[39m: [35m66[39m,
+      },
+      [34;4mApp\Models\Representante[39;24m {#5523
+        [34mnome[39m: "[32mConor Schultz[39m",
+        [34mobservacao[39m: "[32mMock Turtle: 'crumbs would.[39m",
+        [34mupdated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mcreated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mid[39m: [35m67[39m,
+      },
+      [34;4mApp\Models\Representante[39;24m {#5524
+        [34mnome[39m: "[32mHollis Moore[39m",
+        [34mobservacao[39m: [36mnull[39m,
+        [34mupdated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mcreated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mid[39m: [35m68[39m,
+      },
+      [34;4mApp\Models\Representante[39;24m {#5525
+        [34mnome[39m: "[32mBlake Steuber[39m",
+        [34mobservacao[39m: [36mnull[39m,
+        [34mupdated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mcreated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mid[39m: [35m69[39m,
+      },
+      [34;4mApp\Models\Representante[39;24m {#5526
+        [34mnome[39m: "[32mMiss Janis Abernathy[39m",
+        [34mobservacao[39m: [36mnull[39m,
+        [34mupdated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mcreated_at[39m: "[32m2025-06-18 09:34:47[39m",
+        [34mid[39m: [35m70[39m,
+      },
+    ],
+  }
+
