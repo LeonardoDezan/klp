@@ -29,7 +29,7 @@ class Login extends Component
         if ($usuario && Hash::check($this->password, $usuario->password)) {
             Auth::login($usuario);
             session()->regenerate();
-            return redirect()->route('dashboard');
+            return redirect()->intended(route('dashboard'));
         }
 
         $this->erro = 'Credenciais inválidas. Verifique os dados e tente novamente.';
