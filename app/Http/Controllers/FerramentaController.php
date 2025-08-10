@@ -10,4 +10,9 @@ class FerramentaController extends Controller
     {
         return view('ferramentas.romaneio');
     }
+
+    public function importaestoque()
+    {
+        return view('ferramentas.importa-estoque');
+    }
 }
