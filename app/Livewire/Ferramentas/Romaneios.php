@@ -50,6 +50,7 @@ class Romaneios extends Component
             $this->relatorios[] = $relatorio;
         }
     }
+<<<<<<< HEAD
 
     public function render()
     {
@@ -57,4 +58,11 @@ class Romaneios extends Component
     }
 }
 
+=======
+>>>>>>> v2.0
 
+    public function render()
+    {
+        return view('livewire.ferramentas.romaneios');
+    }
+}

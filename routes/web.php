@@ -53,6 +53,7 @@ Route::middleware('auth')->group(function () {
     //---------Ferramentas---------
     Route::prefix('ferramentas')->group(function () {
         Route::get('/romaneios', [FerramentaController::class, 'romaneios'])->name('ferramentas.romaneios');
+        Route::get('/importa-estoque', [FerramentaController::class, 'importaestoque'])->name('ferramentas.importa-estoque');
     });
 
 
