@@ -87,7 +87,6 @@ class RepresentanteFormulario extends Component
         if ($id) {
             $representante = Representante::with('representante_contatos')->findOrFail($id);
 
-            // CORREÇÃO AQUI:
             $this->representanteId = $representante->id;
 
             $this->nome = $representante->nome;
