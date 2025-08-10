@@ -100,6 +100,12 @@
                     Romaneios
                 </a>
             </div>
+            <div x-show="abertoSub && aberto" x-transition x-cloak class="pl-12 space-y-1 text-sm text-gray-300">
+                <a href="{{ route('ferramentas.importa-estoque') }}"
+                   class="block hover:text-white {{ request()->routeIs('ferramentas.importa-estoque') ? 'text-gray-300 ' : '' }}">
+                    Importar Estoque
+                </a>
+            </div>
         </div>
 
 
