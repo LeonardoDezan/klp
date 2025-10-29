@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\FerramentaController;
+use App\Http\Controllers\MotoristaController;
 use App\Http\Controllers\RepresentanteController;
 use App\Http\Controllers\UsuarioController;
 use App\Livewire\Auth\Login;
@@ -49,6 +50,11 @@ Route::middleware('auth')->group(function () {
 
     //---------Usuarios---------
     Route::get('/usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
+
+    //---------Frota---------
+    Route::get('/motoristas', [MotoristaController::class, 'index'])->name('motoristas.index');
+    Route::get('/motoristas/novo', [MotoristaController::class, 'create'])->name('motoristas.create');
+
 
     //---------Ferramentas---------
     Route::prefix('ferramentas')->group(function () {
