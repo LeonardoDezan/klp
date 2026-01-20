@@ -6,7 +6,7 @@ use Illuminate\View\Component;
 
 class InputUppercase extends Component
 {
-    public $label;
+    public ?string $label = null;
     public $name;
     public $model;
     public $type;

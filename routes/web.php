@@ -4,8 +4,10 @@ use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\FerramentaController;
 use App\Http\Controllers\RepresentanteController;
 use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\VeiculoController;
 use App\Livewire\Auth\Login;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 
 
@@ -56,5 +58,10 @@ Route::middleware('auth')->group(function () {
         Route::get('/importa-estoque', [FerramentaController::class, 'importaestoque'])->name('ferramentas.importa-estoque');
     });
 
+    Route::prefix('frota')->group(function(){
+        Route::get('/veiculos/novo', [VeiculoController::class, 'create'])->name('veiculos.create');
+        Route::get('/veiculos', [VeiculoController::class, 'index'])->name('veiculos.index');
+        Route::get('/veiculos/{id}/editar', [VeiculoController::class, 'edit'])->name('veiculos.edit');
+    });
 
 });

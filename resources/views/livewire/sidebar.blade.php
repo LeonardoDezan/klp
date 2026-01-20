@@ -71,14 +71,35 @@
                 <a href="{{ route('representantes.create') }}" class="block hover:text-white">Novo</a>
             </div>
         </div>
+        
+        <!-- Frota -->
+                <div x-data="{ abertoSub: false }">
+            <button @click="abertoSub = !abertoSub"
+                    class="flex items-center gap-3 w-full px-4 py-2 hover:bg-gray-700 transition">
+                <span class="material-icons">local_shipping</span>
+                <span x-show="aberto" x-transition>Frota</span>
+                <svg x-show="aberto" :class="{ 'rotate-90': abertoSub }"
+                     class="ml-auto w-4 h-4 transition-transform"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5l7 7-7 7"/>
+                </svg>
+            </button>
 
-        <!-- Usuários -->
-        <a href="{{ route('usuarios.index') }}"
-           class="flex items-center gap-3 px-4 py-2 hover:bg-gray-700 transition"
-           :class="{ 'bg-gray-800': '{{ request()->routeIs('usuarios.*') }}' }">
-            <span class="material-icons">manage_accounts</span>
-            <span x-show="aberto" x-transition>Usuários</span>
-        </a>
+            <div x-show="abertoSub && aberto" x-transition x-cloak class="pl-12 space-y-1 text-sm text-gray-300">
+                <a href="{{ route('veiculos.index') }}"
+                   class="block hover:text-white {{ request()->routeIs('ferramentas.romaneios') ? 'text-gray-300 ' : '' }}">
+                    Veículos
+                </a>
+            </div>
+            <div x-show="abertoSub && aberto" x-transition x-cloak class="pl-12 space-y-1 text-sm text-gray-300">
+                <a href="#"
+                   class="block hover:text-white {{ request()->routeIs('ferramentas.importa-estoque') ? 'text-gray-300 ' : '' }}">
+                    Motoristas
+                </a>
+            </div>
+        </div>
+
 
         <!-- Ferramentas -->
         <div x-data="{ abertoSub: false }">
@@ -108,6 +129,14 @@
             </div>
         </div>
 
+
+                <!-- Usuários -->
+        <a href="{{ route('usuarios.index') }}"
+           class="flex items-center gap-3 px-4 py-2 hover:bg-gray-700 transition"
+           :class="{ 'bg-gray-800': '{{ request()->routeIs('usuarios.*') }}' }">
+            <span class="material-icons">manage_accounts</span>
+            <span x-show="aberto" x-transition>Usuários</span>
+        </a>
 
         <!-- Logout -->
         <div class="border-t border-gray-700">
