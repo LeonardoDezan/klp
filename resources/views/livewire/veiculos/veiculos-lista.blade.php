@@ -94,7 +94,7 @@
                             <div class="flex justify-end gap-2">
 
                                 <a
-                                    href="#"
+                                    href="{{ route('veiculos.show', ['veiculo' => $v->id]) }}"
                                     class="px-3 py-1.5 rounded-lg border border-gray-300 hover:bg-gray-50 text-sm"
                                 >
                                     Ver

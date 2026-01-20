@@ -8,6 +8,8 @@ use App\Http\Controllers\VeiculoController;
 use App\Livewire\Auth\Login;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Livewire\Veiculos\VeiculoShow;
+
 
 
 
@@ -62,6 +64,10 @@ Route::middleware('auth')->group(function () {
         Route::get('/veiculos/novo', [VeiculoController::class, 'create'])->name('veiculos.create');
         Route::get('/veiculos', [VeiculoController::class, 'index'])->name('veiculos.index');
         Route::get('/veiculos/{id}/editar', [VeiculoController::class, 'edit'])->name('veiculos.edit');
+        Route::get('/veiculos/{veiculo}', [VeiculoController::class, 'show'])->name('veiculos.show');
     });
+
+    
+  
 
 });

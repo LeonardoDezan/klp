@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Veiculo;
 
 class VeiculoController extends Controller
 {
@@ -19,5 +20,10 @@ class VeiculoController extends Controller
     public function edit($id)
     {
         return view('frota.veiculos.edit', compact('id'));
+    }
+
+        public function show(Veiculo $veiculo)
+    {
+        return view('frota.veiculos.show', compact('veiculo'));
     }
 }
