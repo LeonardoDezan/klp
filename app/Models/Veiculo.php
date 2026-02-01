@@ -20,6 +20,10 @@ class Veiculo extends Model
             'chassi',
             'tipo',
         ];
-
+    
+        public function manutencoes()
+            {
+                return $this->hasMany(\App\Models\Manutencao::class);
+            }
     
 }

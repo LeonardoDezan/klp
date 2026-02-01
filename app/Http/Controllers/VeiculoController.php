@@ -22,8 +22,12 @@ class VeiculoController extends Controller
         return view('frota.veiculos.edit', compact('id'));
     }
 
-        public function show(Veiculo $veiculo)
+    public function show(Veiculo $veiculo)
     {
+        $veiculo->load([
+            'manutencoes' => fn ($q) => $q->orderByDesc('data')->orderByDesc('id'),
+        ]);
+
         return view('frota.veiculos.show', compact('veiculo'));
     }
 }
