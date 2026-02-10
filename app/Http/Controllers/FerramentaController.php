@@ -15,4 +15,9 @@ class FerramentaController extends Controller
     {
         return view('ferramentas.importa-estoque');
     }
+
+        public function fichaclientes()
+    {
+        return view('ferramentas.ficha-clientes');
+    }
 }

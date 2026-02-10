@@ -108,23 +108,28 @@
                 <span class="material-icons">construction</span>
                 <span x-show="aberto" x-transition>Ferramentas</span>
                 <svg x-show="aberto" :class="{ 'rotate-90': abertoSub }"
-                     class="ml-auto w-4 h-4 transition-transform"
-                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="ml-auto w-4 h-4 transition-transform"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M9 5l7 7-7 7"/>
+                        d="M9 5l7 7-7 7"/>
                 </svg>
             </button>
 
             <div x-show="abertoSub && aberto" x-transition x-cloak class="pl-12 space-y-1 text-sm text-gray-300">
                 <a href="{{ route('ferramentas.romaneios') }}"
-                   class="block hover:text-white {{ request()->routeIs('ferramentas.romaneios') ? 'text-gray-300 ' : '' }}">
+                class="block hover:text-white {{ request()->routeIs('ferramentas.romaneios') ? 'text-white font-semibold' : '' }}">
                     Romaneios
                 </a>
-            </div>
-            <div x-show="abertoSub && aberto" x-transition x-cloak class="pl-12 space-y-1 text-sm text-gray-300">
+
                 <a href="{{ route('ferramentas.importa-estoque') }}"
-                   class="block hover:text-white {{ request()->routeIs('ferramentas.importa-estoque') ? 'text-gray-300 ' : '' }}">
+                class="block hover:text-white {{ request()->routeIs('ferramentas.importa-estoque') ? 'text-white font-semibold' : '' }}">
                     Importar Estoque
+                </a>
+
+                {{-- NOVO ATALHO --}}
+                <a href="{{ route('ferramentas.ficha-clientes') }}"
+                class="block hover:text-white {{ request()->routeIs('ferramentas.ficha-clientes') ? 'text-white font-semibold' : '' }}">
+                    Ficha de Clientes
                 </a>
             </div>
         </div>

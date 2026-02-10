@@ -58,6 +58,7 @@ Route::middleware('auth')->group(function () {
     Route::prefix('ferramentas')->group(function () {
         Route::get('/romaneios', [FerramentaController::class, 'romaneios'])->name('ferramentas.romaneios');
         Route::get('/importa-estoque', [FerramentaController::class, 'importaestoque'])->name('ferramentas.importa-estoque');
+        Route::get('/ficha-clientes', [FerramentaController::class, 'fichaclientes'])->name('ferramentas.ficha-clientes');
     });
 
     Route::prefix('frota')->group(function(){
